@@ -49,7 +49,7 @@ namespace TE_CSharp
 
         }
         /// <summary>
-        /// INSTANCE METHOD
+        /// INSTANCE METHOD - no static keyword
         /// </summary>
         public void Looping()
         {
