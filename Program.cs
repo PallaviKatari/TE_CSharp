@@ -25,7 +25,7 @@ namespace Basic_Concepts
             string s = "John";
             //Display the output in various ways
             Console.WriteLine(a);
-            //Concatination
+            //Concatenation
             Console.WriteLine("Double value is:"+b);
             //Index value
             Console.WriteLine("Char value is:{0}",c);
