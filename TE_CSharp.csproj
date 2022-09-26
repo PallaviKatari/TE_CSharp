@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>TE_CSharp.RegExp</StartupObject>
+    <StartupObject>TE_CSharp.AccessSpecifiersMain</StartupObject>
   </PropertyGroup>
 
 </Project>
