@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TE_CSharp", "TE_CSharp.csproj", "{A1C0E02D-479C-4EDC-AFAE-E16E63B9A7E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TE_CSharp", "TE_CSharp.csproj", "{A1C0E02D-479C-4EDC-AFAE-E16E63B9A7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalDemo", "..\InternalDemo\InternalDemo.csproj", "{DF511183-30D5-4D93-A6BF-392C364FDD76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A1C0E02D-479C-4EDC-AFAE-E16E63B9A7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C0E02D-479C-4EDC-AFAE-E16E63B9A7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C0E02D-479C-4EDC-AFAE-E16E63B9A7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF511183-30D5-4D93-A6BF-392C364FDD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF511183-30D5-4D93-A6BF-392C364FDD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF511183-30D5-4D93-A6BF-392C364FDD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF511183-30D5-4D93-A6BF-392C364FDD76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

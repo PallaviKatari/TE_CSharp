@@ -10,7 +10,7 @@ namespace TE_CSharp
     /// Access Specifiers - Visibility
     /// 5 types - public,private,protected(inheritance),internal,internal protected
     /// </summary>
-    internal class AccessSpecifiers
+    public class AccessSpecifiers
     {
         public int eid;
         public string ename;
