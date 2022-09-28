@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>TE_CSharp.Interface</StartupObject>
+    <StartupObject>TE_CSharp.CustomException1</StartupObject>
   </PropertyGroup>
 
 </Project>
