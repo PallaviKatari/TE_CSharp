@@ -10,7 +10,7 @@ namespace TE_CSharp
     /// Polymorphism - many forms - Compile(Overloading)-Early binding and Runtime(Overriding)-Late binding
     /// Overloading - same method names(no of parameters,type of the parameter,sequence of the parameters)
     /// </summary>
-    internal class Polymorphism_Overloading
+    public class Polymorphism_Overloading
     {
         public static int num;
         /// <summary>

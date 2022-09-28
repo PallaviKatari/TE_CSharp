@@ -8,7 +8,9 @@ namespace TE_CSharp
 {
     /// <summary>
     /// Access Specifiers - Visibility
-    /// 5 types - public,private,protected(inheritance),internal,internal protected
+    /// 5 types - public,private,protected(inheritance),internal,protected internal 
+    /// class - default access specifier - internal
+    /// variables - default access specifier - private
     /// </summary>
     public class AccessSpecifiers
     {

@@ -23,7 +23,7 @@ namespace TE_CSharp
         }
     }
     /// <summary>
-    /// Child class - can access the protected variables
+    /// Child class - can access the protected variables - Single
     /// </summary>
     public class ITDept:Emp
     {
@@ -34,6 +34,9 @@ namespace TE_CSharp
             EmpDetails();
         }
     }
+    /// <summary>
+    /// Child class - can access the protected variables - Multi-level
+    /// </summary>
     public class Admin:ITDept
     {
         /// <summary>
@@ -51,6 +54,18 @@ namespace TE_CSharp
         }
 
     }
+    /// <summary>
+    /// Child class - can access the protected variables - Hybrid,Hierarchial
+    /// </summary>
+
+    public class ITStaff:ITDept
+    {
+        public void Message()
+        {
+            Console.WriteLine($"{did}:{dname}");
+        }
+    }
+
     internal class Inheritance
     {
         public static void Main()
@@ -62,6 +77,8 @@ namespace TE_CSharp
             Admin admin = new Admin();
             admin.GetDetails();
             admin.DeptDetails();
+            ITStaff iTStaff = new ITStaff();
+            iTStaff.Message();
 
         }
     }
