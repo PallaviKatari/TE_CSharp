@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>TE_CSharp.Collections</StartupObject>
+    <StartupObject>Generics_Evolution.Generics</StartupObject>
   </PropertyGroup>
 
 </Project>
