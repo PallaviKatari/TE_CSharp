@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TE_CSharp
 {
-    public class Using_Demo
+    /// <summary>
+    /// sealed keyword->used to avoid other classes to inherit the class that is sealed
+    /// </summary>
+    public sealed class Using_Demo
     {
         public int sum=0;
         /// <summary>
@@ -40,7 +43,6 @@ namespace TE_CSharp
             }
         }
     }
-
     internal class Files3
     {
         public static void Main()
