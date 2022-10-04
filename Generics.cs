@@ -9,8 +9,37 @@ using System.Threading.Tasks;
 /// </summary>
 namespace TE_CSharp
 {
-    internal class Generics
+    /// <summary>
+    /// GENERIC CLASS
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    internal class Generics<T>//int
     {
+        //Generic Variable
+        public T genericvariable;
+        /// <summary>
+        /// Generic constructor with one parameter
+        /// </summary>
+        /// <param name="val"></param>
+        public Generics(T val)
+        {
+            genericvariable = val;
+        }
+        /// <summary>
+        /// Generic method
+        /// </summary>
+        /// <param name="genericparameter"></param>
+        public void GenericMethod(T genericparameter)
+        {
+            Console.WriteLine($"EmpID:{genericvariable}");
+            Console.WriteLine($"Salary: {genericparameter}");
+            Console.WriteLine($"{typeof(T).ToString()}");
+        }
+        /// <summary>
+        /// Generic property
+        /// </summary>
+        public T GenericProperty { get; set; }
+
     }
 }
 
@@ -43,9 +72,30 @@ namespace Generics_Evolution
 
         public static void Main()
         {
+            //Invoking the static methods within the Generics_Evolution namespace
             Stage1();
             Stage2();
             Stage3_Generics();
+            Console.WriteLine("----------------------------------------");
+            //Create an instance the TE_CSharp.Generic class
+            TE_CSharp.Generics<int> generics = new TE_CSharp.Generics<int>(100);
+            generics.GenericMethod(25000);
+            generics.GenericProperty = 24;
+            Console.WriteLine($"Age:{generics.GenericProperty}");
+            Console.WriteLine("----------------------------------------");
+            
+            TE_CSharp.Generics<double> generics1 = new TE_CSharp.Generics<double>(100);
+            generics1.GenericMethod(25000.50);
+            generics1.GenericProperty = 24.5;
+            Console.WriteLine($"Age:{generics1.GenericProperty}");
+            Console.WriteLine("----------------------------------------");
+
+            TE_CSharp.Generics<string> generics2 = new TE_CSharp.Generics<string>("E100");
+            generics2.GenericMethod("John:25000");
+            generics2.GenericProperty = "John:24";
+            Console.WriteLine($"Age:{generics2.GenericProperty}");
+            Console.WriteLine("----------------------------------------");
+
         }
         //-----------------------------------------------------------------------//
         /// <summary>

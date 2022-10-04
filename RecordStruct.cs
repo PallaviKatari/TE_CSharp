@@ -24,13 +24,18 @@ namespace TE_CSharp
         ///Init-only properties are allowed on record structs
         ///If you try to reassign a property that has the init keyword set after its initialization you’ll get a compilation error
         /// </summary>
-        public string Name { get; init; }
+        public string Name { get; init; } //init->immutability->cannot be changed
+        /// <summary>
+        /// record sructs are mutable by default but by using init we can make them immutable
+        /// </summary>
         public int Id { get; init; }
+
     }
     internal class RecordStruct
     {
         public static void Main()
         {
+            //Create an instance for the record struct Product
             var product = new Product
             {
                 Name = "Books1",
@@ -42,7 +47,7 @@ namespace TE_CSharp
                 Id = 2
             };
 
-            //Printing members
+            //Printing members of the record struct Product
             Console.WriteLine(product);
             Console.WriteLine(product.ToString());
             Console.WriteLine($"{product}");
@@ -56,12 +61,18 @@ namespace TE_CSharp
             Console.WriteLine(product == product1); // Returns true
 
             //With-expressions
-            //with keyword ->product1 (Name="Books2" and assigning Id=3 using with keyword)
+            //with keyword ->product1 (Name="Books2" and assigning Id=3 using with keyword
+            //Name = "Books2",
+            //Id = 2
             var newProduct = product1 with { Id = 3 };
 
             Console.WriteLine(newProduct.ToString());
 
-            //product.Name = "Book3"; // Error CS8852  Init-only property or indexer 'Product.Name' can only be assigned in an object initializer, or on 'this' or 'base' in an instance constructor or an 'init' accessor.
+            var newProduct1 = product1 with { Name = "Book3" };
+
+            Console.WriteLine(newProduct1.ToString());
+
+            //product.Id = 100; // Error CS8852  Init-only property or indexer 'Product.Name' can only be assigned in an object initializer, or on 'this' or 'base' in an instance constructor or an 'init' accessor.
 
             Console.WriteLine(product);
         }
